@@ -638,7 +638,8 @@ namespace ts {
         {
             name: "allowTypesInJsFiles",
             type: "boolean",
-            category: Diagnostics.Type_Checking,
+            category: Diagnostics.JavaScript_Support,
+            description: Diagnostics.Allow_JavaScript_files_to_be_a_part_of_your_program_Use_the_checkJS_option_to_get_errors_from_these_files,
             defaultValueDescription: false,
         },
         {
