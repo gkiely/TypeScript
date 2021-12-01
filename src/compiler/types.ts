@@ -6052,6 +6052,7 @@ namespace ts {
         allowUnreachableCode?: boolean;
         allowUnusedLabels?: boolean;
         alwaysStrict?: boolean;  // Always combine with strict property
+        allowTypesInJsFiles?: boolean;
         baseUrl?: string;
         /** An error if set - this should only go through the -b pipeline and not actually be observed */
         /*@internal*/
