@@ -636,7 +636,13 @@ namespace ts {
             defaultValueDescription: false,
         },
         {
-            name: "noImplicitAny",
+            name: "allowTypesInJsFiles",
+            type: "boolean",
+            category: Diagnostics.Type_Checking,
+            defaultValueDescription: false,
+        },
+        {
+            name: "",
             type: "boolean",
             affectsSemanticDiagnostics: true,
             strictFlag: true,
