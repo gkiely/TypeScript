@@ -2139,7 +2139,7 @@ namespace ts {
                         case SyntaxKind.ArrowFunction:
                         case SyntaxKind.VariableDeclaration:
                             // type annotation
-                            if ((parent as FunctionLikeDeclaration | VariableDeclaration | ParameterDeclaration | PropertyDeclaration).type === node) {
+                            if ((parent as FunctionLikeDeclaration | VariableDeclaration | ParameterDeclaration | PropertyDeclaration).type === node && !options.allowTypesInJsFiles) {
                                 diagnostics.push(createDiagnosticForNode(node, Diagnostics.Type_annotations_can_only_be_used_in_TypeScript_files));
                                 return "skip";
                             }
